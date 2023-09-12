@@ -1,6 +1,8 @@
 # Programa_de_Investimentos
 Armazenamento de dados de investidores/investimentos (Ling. C)
 
+Link do meu Replit para executar o programa: https://replit.com/@RyanLeiteBezerr
+
 <strong>Variáveis para cada investidor:</strong>
 
 - código (do investidor)
