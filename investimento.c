@@ -599,7 +599,7 @@ void imprimir_dados_investimento_pelo_codigo(FILE *investimento)
                     printf("- Rentabilidade Anual: %.2f %%\n", algum.rentabilidade_anual);
                     printf("- Data de Aplicacao: %02d/%02d/%04d\n", algum.data_aplicacao.dia,
                         algum.data_aplicacao.mes, algum.data_aplicacao.ano);
-                    printf("- Valorizacao ate hoje: %.2f\n",rendimento_investimento(algum));
+                    printf("- Valorizacao ate hoje: R$ %.2f\n",rendimento_investimento(algum));
                     printf("-----------------------------------\n");
 
                     codigo_existente = 1;
@@ -671,7 +671,7 @@ void imprimir_investimentos_pelo_codigo_investidor(FILE *investimento)
                     printf("- Rentabilidade Anual: %.2f %%\n", algum.rentabilidade_anual);
                     printf("- Data de Aplicacao: %02d/%02d/%04d\n", algum.data_aplicacao.dia,
                         algum.data_aplicacao.mes, algum.data_aplicacao.ano);
-                    printf("- Valorizacao ate hoje: %.2f\n", rendimento_investimento(algum));
+                    printf("- Valorizacao ate hoje: R$ %.2f\n", rendimento_investimento(algum));
                     printf("-----------------------------------\n");
                     investimentos_imprimidos = 1;
                     }
@@ -745,7 +745,7 @@ void imprimir_investimentos_alfabeticamente_pelo_tipo(FILE *investimento)
             printf("- Rentabilidade Anual: %.2f %%\n", investimentos[i].rentabilidade_anual);
             printf("- Data de Aplicacao: %02d/%02d/%04d\n", investimentos[i].data_aplicacao.dia,
                     investimentos[i].data_aplicacao.mes, investimentos[i].data_aplicacao.ano);
-            printf("- Valorizacao ate hoje: %.2f\n",rendimento_investimento(investimentos[i]));
+            printf("- Valorizacao ate hoje: R$ %.2f\n",rendimento_investimento(investimentos[i]));
             printf("-----------------------------------\n");
         }
     }
